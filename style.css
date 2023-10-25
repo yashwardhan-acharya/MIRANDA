@@ -525,7 +525,7 @@ body {
   /* background-color: red; */
   animation-timing-function: linear;
   animation-name: scroll;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
