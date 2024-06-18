@@ -1,6 +1,6 @@
 @font-face {
   font-family: domaine;
-  src: url(domaine.ttf);
+  src: url(./font/domaine.ttf);
 }
 
 * {
@@ -32,14 +32,16 @@ body {
 
 #nav {
   height: 110px;
-  /* background-color: red; */
+  background-color: #c4bcb3;
   width: 100%;
   display: flex;
   padding: 0 30px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #222;
-
+position:fixed;
+z-index: 999;
+top: 0;
   /* overflow: hidden; */
 }
 
@@ -60,7 +62,7 @@ body {
 }
 
 #elems {
-  /* margin-top: 110px; */
+  margin-top: 110px;
   /* background-color: red; */
   height: 430px;
   display: flex;
@@ -553,5 +555,224 @@ body {
 
   100% {
     transform: translateX(calc(-100% - 34px));
+  }
+}
+
+#page7{
+  padding: 20px 0px;
+  width: 100%;
+
+  background-color: #c4bcb3;
+  /* white-space: nowrap; */
+  /* overflow-x: auto; */
+  /* overflow-y: hidden; */
+  border-top: 1px solid #2f2f2f;
+  border-bottom: 1px solid #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page7-elem1{
+  display: flex;
+  /* width: 15%; */
+  width: fit-content;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* background-color: blueviolet; */
+  padding: 10px 5px;
+}
+.page7-elem-left p{
+  font-size: 28px;
+  font-family: domaine;
+  font-weight: 100;
+  text-align: center;
+
+}
+.page7-elem-left h2{
+  font-size: 56px;
+  letter-spacing: -2px;
+  font-family: domaine;
+  
+}
+.page7-elem-right{
+  /*  */
+  font-size: 75px;
+  font-family: DOMAINE;
+  font-weight: -100;
+  margin-left: 10px;
+
+
+}
+
+
+
+#page8-elems {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* background-color: red; */
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+#elem6 {
+  width: 30%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+#elem7 {
+  width: 30%;
+  height: 100%;
+  border-right: 2px solid #acacac;
+  border-left: 2px solid #acacac;
+  padding: 20 60px;
+  text-align: center;
+  /* background-color: blue; */
+}
+
+#elem8 {
+  width: 30%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+#elem6 #image-div {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#image-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+}
+
+#elem8 #image-div {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#image-div:hover img {
+  scale: 1.1;
+}
+
+#elem6 h4 {
+  font-size: 24px;
+  /* color: white; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: canopee;
+}
+
+#elem6 h4 span {
+  background-color: #b43b12;
+  color: #c4bcb3;
+  margin-left: 10px;
+
+  font-weight: 100;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+#elem6 p {
+  font-size: 23px;
+  font-family: domaine;
+  font-weight: 100;
+  color: #656565;
+}
+
+#elem8 h4 {
+  font-size: 24px;
+  /* color: white; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: canopee;
+}
+
+#elem8 h4 span {
+  background-color: #b43b12;
+  color: #c4bcb3;
+  margin-left: 10px;
+
+  font-weight: 100;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+#elem8 p {
+  font-size: 23px;
+  font-family: domaine;
+  font-weight: 100;
+  color: #656565;
+}
+
+#elem7 h2 {
+  font-family: canopee;
+  font-size: 75px;
+  font-weight: 100;
+}
+
+#elem7 h3 {
+  font-family: domaine;
+  font-size: 50px;
+  color: #2f2f2f;
+  font-weight: 100;
+  margin: 20px 0;
+}
+
+#elem7 h6 {
+  font-family: domaine;
+  font-size: 20px;
+  color: #2f2f2f;
+  font-weight: 100;
+}
+#page8{
+  /* height: 110vh; */
+  width: 100vw;
+  background-color: #c4bcb3;
+  position: relative;
+  overflow: hidden;
+}
+
+#page6{
+  height: 80px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+#page6-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+}
+#page6-center{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+}
+#page6-right{
+  display: flex;
+  align-items: center;
+  /* color: black !important; */
+  justify-content: space-around;
+  
+  width: 25%;
+  h1{
+    color: #1b1b1b;
+    text-decoration: none !important;
   }
 }
